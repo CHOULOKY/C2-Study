@@ -1,4 +1,5 @@
 // Title: A-B
+// Solved by VICLOKY
 
 #include <iostream>
 using namespace std;

@@ -1,4 +1,4 @@
-// Title: 1998년생인 내가 태국에서는 2541년생?!
+// Title: 윤년
 // Solved by VICLOKY
 
 #include <iostream>
@@ -7,6 +7,9 @@ using namespace std;
 int main(void) {
 	int a;
 	cin >> a;
-	cout << a-543;
+	if(a%4==0 && (a%100!=0 || a%400==0)) cout << 1;
+	else cout << 0;
+	
+	return 0;
 }
 

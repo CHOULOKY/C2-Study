@@ -1,4 +1,4 @@
-// Title: 나머지
+// Title: 오븐 시계
 // Solved by VICLOKY
 
 #include <iostream>
@@ -8,6 +8,10 @@ int main(void) {
 	int a, b, c;
 	cin >> a >> b >> c;
 	
-	cout << (a+b)%c << '\n' << ((a%c) + (b%c))%c << '\n' << (a*b)%c << '\n' << ((a%c) * (b%c))%c;
+	if((b += c%60)>=60) {a++; b %= 60;}
+	a = (a += c/60)%24;
+	cout << a << ' ' << b;
+	
+	return 0;
 }
 

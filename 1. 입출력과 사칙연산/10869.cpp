@@ -1,4 +1,5 @@
 // Title: 사칙연산
+// Solved by VICLOKY
 
 #include <iostream>
 using namespace std;
