@@ -1,13 +1,12 @@
-// Title: 문자와 문자열
+// Title: 단어 길이 재기
 // Solved by VICLOKY
 
 #include <iostream>
 using namespace std;
 
 int main(void) {
-	string str; int n;
-	cin >> str >> n;
-	cout << str[n-1];
+	string str; cin >> str;
+	cout << str.size();
 	
 	return 0;
 }
