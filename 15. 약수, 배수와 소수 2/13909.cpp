@@ -1,0 +1,11 @@
+// Title: Ã¢¹® ´Ý±â
+// Solved by VICLOKY
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(void) {
+	int n; cin >> n;
+	cout << sqrt(n);
+}
