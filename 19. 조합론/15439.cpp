@@ -1,11 +1,9 @@
-// Title: 창문 닫기
+// Title: 베라의 패션
 // Solved by VICLOKY
 
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main(void) {
-	int n; cin >> n;
-	cout << (int)sqrt(n);
+	
 }
