@@ -1,10 +1,11 @@
-// Title: 베라의 패션
+// Title: 녹색거탑
 // Solved by VICLOKY
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(void) {
 	int n; cin >> n;
-	cout << n*(n-1);
+	cout << pow(2, n);
 }

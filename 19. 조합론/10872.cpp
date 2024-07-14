@@ -1,4 +1,4 @@
-// Title: 베라의 패션
+// Title: 팩토리얼
 // Solved by VICLOKY
 
 #include <iostream>
@@ -6,5 +6,7 @@ using namespace std;
 
 int main(void) {
 	int n; cin >> n;
-	cout << n*(n-1);
+	int result=1;
+	for(int i=2; i<=n; i++) result*=i;
+	cout << result;
 }
