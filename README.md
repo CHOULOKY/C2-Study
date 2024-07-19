@@ -1,2 +1,2 @@
-# BAEKJOON
-Solving Baekjoon problems step by step
+# C2-Study
+Solving C++ problems step by step
