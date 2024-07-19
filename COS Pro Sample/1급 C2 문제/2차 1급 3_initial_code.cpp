@@ -35,16 +35,16 @@ int solution(int num) {
     int next_num = num;
     while(true){
         next_num++;
-        int length = func_@@@(@@@);
+        int length = func_b(next_num);
         if(length % 2)
             continue;
-        int divisor = func_@@@(@@@);
+        int divisor = func_a(length/2);
         
         int front = next_num / divisor;
         int back = next_num % divisor;
         
-        int front_sum = func_@@@(@@@);
-        int back_sum = func_@@@(@@@);
+        int front_sum = func_c(front);
+        int back_sum = func_c(back);
         if(front_sum == back_sum)
             break;
     }
