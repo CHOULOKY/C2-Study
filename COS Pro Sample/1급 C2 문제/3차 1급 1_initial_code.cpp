@@ -41,9 +41,9 @@ bool func_c(vector<int> first, vector<int> second){
 bool solution(vector<int> arrA, vector<int> arrB) {
     if(arrA.size() != arrB.size())
         return false;
-    if(func_@@@(@@@)){
-        vector<int> arrA_temp = func_@@@(@@@);
-        if(func_@@@(@@@))
+    if(func_b(arrA, arrB)){
+        vector<int> arrA_temp = func_a(arrA);
+        if(func_c(arrA_temp, arrB))
             return true;
     }
     return false;
