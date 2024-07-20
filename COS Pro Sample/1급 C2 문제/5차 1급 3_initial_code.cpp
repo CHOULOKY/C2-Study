@@ -18,7 +18,7 @@ vector<int> solution(vector<int> numbers) {
 	swap(numbers[mid], numbers[numbers.size()-1]);
 
 	int left = mid + 1;
-	int right = numbers.size() - 1;
+	int right = numbers.size() - 2;
 	while(left <= right) {
 		swap(numbers[left], numbers[right]);
 		left = left + 1;
