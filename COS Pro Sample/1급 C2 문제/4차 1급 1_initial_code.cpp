@@ -10,7 +10,7 @@ void create_words(int lev, string str) {
     words.push_back(str);
     for (int i = 0; i < 5; i++)
         if (lev < 5)
-            create_words(lev + 1, vowels[i]);
+            create_words(lev + 1, str + vowels[i]);
 }
 
 int solution(string word) {
