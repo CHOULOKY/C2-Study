@@ -6,7 +6,7 @@ int find(vector<int> &parent, int u) {
 	if(u == parent[u])
 		return u;
 
-	parent[u] = @@@;
+	parent[u] = find(parent, parent[u]);
 	return parent[u];
 }
 
@@ -17,7 +17,7 @@ bool merge(vector<int> &parent, int u, int v) {
 	if(u == v)
 		return true;
 
-	@@@;
+	parent[u] = v;
 	return false;
 }
 
@@ -26,7 +26,7 @@ int solution(int n, vector<vector<int>> connections) {
 
 	vector<int> parent(n+1);
 	for(int i = 1; i <= n; i++)
-		@@@;
+		parent[i] = i;
 
 	for(int i = 0; i < connections.size(); i++)
 		if(merge(parent, connections[i][0], connections[i][1])) {
