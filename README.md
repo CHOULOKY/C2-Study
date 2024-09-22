@@ -1,16 +1,22 @@
 <div align="center">
+    
+  # C++ Study
+  Solving C++ problems step by step<br>
+  (Backjoon, Programmers, COS Pro C++ ...)
+  <br><br><br>
+  ---
+  ### CHOULOKY
+  <a href="https://solved.ac/chouloky">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=CHOULOKY" />
+    <img src="http://mazandi.herokuapp.com/api?handle=CHOULOKY&theme=warm"/><br>
+  </a>
   
-# C++ Study
-Solving C++ problems step by step<br>
-(Backjoon, Programmers, COS Pro C++ ...)
-<br><br><br>
----
-### CHOULOKY
-
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=PPAGNIN)](https://solved.ac/PPAGNIN)
-<img src="http://mazandi.herokuapp.com/api?handle=PPAGNIN&theme=warm"/><br>
+  ### PPAGNIN
+  <a href="https://solved.ac/ppagnin">
+    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=PPAGNIN" />
+    <img src="http://mazandi.herokuapp.com/api?handle=PPAGNIN&theme=warm"/><br>
+  </a>
 </div>
-
 
 <!--<img align="right" width="23" src="https://github.com/seondal/seondal/assets/75469131/f3735e2a-2fb1-4e7f-bbea-81f5698213b0" />-->
 
