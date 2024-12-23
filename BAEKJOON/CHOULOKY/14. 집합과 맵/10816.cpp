@@ -1,30 +1,18 @@
 #include <iostream>
-#include <vector>
 #include <map>
 using namespace std;
 
 int main(void) {
 	cin.tie(0); ios::sync_with_stdio(false);
-	int a, b; cin >> a >> b;
-	map<string, int> mp;
-	
-	string str;
+	map<int, int> mp;
+	int a; cin >> a;
 	for(int i=0; i<a; i++) {
-		cin >> str;
-		mp[str]++;
+		int num; cin >> num;
+		mp[num]++;
 	}
-	for(int i=0; i<b; i++) {
-		cin >> str;
-		mp[str]++;
-	}
-	
-	vector<string> vec;
-	for(auto iter:mp) {
-		if(iter.second == 2) vec.push_back(iter.first);
-	}
-	
-	cout << vec.size() << '\n';
-	for(auto iter:vec) {
-		cout << iter << '\n';
+	cin >> a;
+	for(int i=0; i<a; i++) {
+		int num; cin >> num;
+		cout << mp[num] << ' ';
 	}
 }

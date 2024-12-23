@@ -1,15 +1,30 @@
 #include <iostream>
-#include <set>
+#include <vector>
+#include <map>
 using namespace std;
 
 int main(void) {
 	cin.tie(0); ios::sync_with_stdio(false);
-	int n; cin >> n;
-	set<string> st;
-	for(int i=0; i<n; i++) {
-		string a, b; cin >> a >> b;
-		if(b == "enter") st.emplace(a);
-		else st.erase(a);
+	int a, b; cin >> a >> b;
+	map<string, int> mp;
+	
+	string str;
+	for(int i=0; i<a; i++) {
+		cin >> str;
+		mp[str]++;
 	}
-	for(auto iter=st.rbegin(); iter!=st.rend(); iter++) cout << *iter << '\n';
+	for(int i=0; i<b; i++) {
+		cin >> str;
+		mp[str]++;
+	}
+	
+	vector<string> vec;
+	for(auto iter:mp) {
+		if(iter.second == 2) vec.push_back(iter.first);
+	}
+	
+	cout << vec.size() << '\n';
+	for(auto iter:vec) {
+		cout << iter << '\n';
+	}
 }

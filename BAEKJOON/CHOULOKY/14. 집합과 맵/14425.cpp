@@ -4,13 +4,16 @@ using namespace std;
 
 int main(void) {
 	cin.tie(0); ios::sync_with_stdio(false);
-	string str; cin >> str;
 	set<string> st;
-	int length = str.length();
-	for(int i=0; i<length; i++) {
-		for(int j=i; j<length; j++) {
-			st.insert(str.substr(i, j-i+1));
-		}
+	int a, b; cin >> a >> b;
+	for(int i=0; i<a; i++) {
+		string str; cin >> str;
+		st.insert(str);
 	}
-	cout << st.size();
+	int result = 0;
+	for(int i=0; i<b; i++) {
+		string str; cin >> str;
+		if(st.find(str) != st.end()) result++;
+	}
+	cout << result;
 }

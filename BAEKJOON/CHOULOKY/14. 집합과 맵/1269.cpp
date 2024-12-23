@@ -1,20 +1,27 @@
 #include <iostream>
-#include <set>
+#include <vector>
+#include <map>
 using namespace std;
 
 int main(void) {
 	cin.tie(0); ios::sync_with_stdio(false);
-	int n; cin >> n;
-	set<int> st;
-	for(int i=0; i<n; i++) {
-		int num; cin >> num;
-		st.insert(num);
+	int a, b; cin >> a >> b;
+	map<int, int> mp;
+	
+	int num;
+	for(int i=0; i<a; i++) {
+		cin >> num;
+		mp[num]++;
 	}
-	int m; cin >> m;
-	for(int i=0; i<m; i++) {
-		int num; cin >> num;
-		if(st.find(num) != st.end()) cout << 1;
-		else cout << 0;
-		cout << ' ';
+	for(int i=0; i<b; i++) {
+		cin >> num;
+		mp[num]++;
 	}
+	
+	vector<int> vec;
+	for(auto iter:mp) {
+		if(iter.second == 1) vec.push_back(iter.first);
+	}
+	
+	cout << vec.size() << '\n';
 }

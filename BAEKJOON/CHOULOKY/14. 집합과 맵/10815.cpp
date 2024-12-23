@@ -1,18 +1,20 @@
 #include <iostream>
-#include <map>
+#include <set>
 using namespace std;
 
 int main(void) {
 	cin.tie(0); ios::sync_with_stdio(false);
-	map<int, int> mp;
-	int a; cin >> a;
-	for(int i=0; i<a; i++) {
+	int n; cin >> n;
+	set<int> st;
+	for(int i=0; i<n; i++) {
 		int num; cin >> num;
-		mp[num]++;
+		st.insert(num);
 	}
-	cin >> a;
-	for(int i=0; i<a; i++) {
+	int m; cin >> m;
+	for(int i=0; i<m; i++) {
 		int num; cin >> num;
-		cout << mp[num] << ' ';
+		if(st.find(num) != st.end()) cout << 1;
+		else cout << 0;
+		cout << ' ';
 	}
 }
