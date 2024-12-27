@@ -1,8 +1,31 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
+
+void pick(vector<int>& picked, int n, int m) {
+	if(m == 0) {
+		for(auto iter:picked) {
+			cout << iter << ' ';
+		}
+		cout << '\n';
+		return;
+	}
+	
+	for(int next=1; next<=n; next++) {
+		if(find(picked.begin(), picked.end(), next) != picked.end()) continue;
+		picked.push_back(next);
+		pick(picked, n, m-1);
+		picked.pop_back();
+	}
+}
 
 int main(void) {
 	cin.tie(0); ios::sync_with_stdio(false);
 	
 	int n; cin >> n;
+	int m; cin >> m;
+	
+	vector<int> picked;
+	pick(picked, n, m);
 }
